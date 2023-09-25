@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/showSubTaskStyle.css" />
+  </head>
+  <body onload="showSubtasksOfTask()">
+    <header id="header">
+      <div class="h1Div">
+        <h1>Task Manager</h1>
+      </div>
+    </header>
+
+    <div class="mainContainer">
+      <div class="container">
+        <h1>Main Task</h1>
+        <div class="con">
+          <div class="taskContainer">
+            <div class="box1">
+              <p>ID</p>
+              <p>Name</p>
+              <p>Start Date</p>
+              <p>End Date</p>
+              <p>Status</p>
+            </div>
+
+            <div class="box2">
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+            </div>
+
+            <div class="box3" id="box3">
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="addBtn">
+            <button id="addsubtaskBtn" onclick="check('subtask')">ADD SUBTASK</button>
+          </div>
+        </div>
+ 
+      </div>
+
+      <div class="containerOfSubtaskcontainer">
+        <h1>SubTasks of this task</h1>
+        <div class="subtaskContainer" id="domid">
+      <!-- from this -->
+        <!-- <div class="tasksInprogress Tasks" >
+
+          <div class="flex1"> 
+
+            <div class="box1"> 
+              <p>ID</p>
+              <p>Name</p>
+              <p>Start Date</p>
+              <p>End Date</p>
+              <p>Status</p>
+            </div>
+
+            <div class="box2">
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+            </div>
+
+            <div class="box3">
+              <p>101</p>
+              <p>go to School</p>
+              <p>12-02-2022</p>
+              <p>12-02-2023</p>
+              <p>In Progress</p>
+            </div>
+
+          </div>
+
+          <div class="editDeleteButtons">
+            <button class="btn1 btn">EDIT</button>
+            <button class="btn2 btn">DELETE</button>
+          </div>
+
+        </div> -->
+
+        </div>  
+      </div>
+    </div>
+
+    <script src="../js/showSubTaskJS.js"></script>
+  </body>
+</html>

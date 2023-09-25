@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: coral;
+    padding: 1rem 0;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+#header .h1Div h1{
+    display: inline;
+}
+#header .h1Div{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    word-break: break-all;
+    color: #fff;
+    text-align: left;
+}
+
+.mainContainer{
+    margin-top: 100px;
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    /* border: 1px solid black; */
+}
+.container{
+    width: 50%;
+    height: fit-content;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* margin-top: 1rem; */
+}
+
+.containerOfSubtaskcontainer{
+    /* margin-top: 1rem; */
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.taskContainer{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    overflow: scroll;
+    /* border: 1px solid black; */
+}
+
+.taskContainer div p{
+    font-size: 1.5rem;
+}
+
+.taskContainer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.con{
+    
+    /* width: 50%; */
+    width: min(100%, 600px);
+    height: auto;
+    padding: 0.5rem;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.2), -1px -1px 50px rgba(0, 0, 0, 0.2);
+}
+
+.subtaskContainer{
+    
+    border-radius: 0.5rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* from this */
+
+.Tasks{
+    
+    width: 90%;
+    height: auto;
+    padding: 0.5rem;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.2), -1px -1px 50px rgba(0, 0, 0, 0.2);
+}
+
+.Tasks .flex1{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.flex1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box3{
+    overflow: hidden;
+}
+
+.flex1 div p, .Tasks div button{
+    font-size: 1.5rem;
+}
+
+.Tasks div button{
+    padding: 5px;
+}
+
+.taskContainer div p{
+    font-size: 1.5rem;
+}
+.editDeleteButtons{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.editDeleteButtons .btn, #addsubtaskBtn{
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 1rem;
+
+}
+
+.editDeleteButtons .btn1{
+    background-color: green;
+}
+
+.editDeleteButtons .btn2{
+    background-color: red;
+}
+
+
+
+#addsubtaskBtn{
+    background-color: rgb(0, 179, 255);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+
+
+/* to this */
+
+/* ----------------------------------------------- */
+@media(min-width: 750px){
+    
+    .container{
+        position: fixed;
+    }
+
+    .containerOfSubtaskcontainer{
+        margin-left: auto;
+    }
+}
+
+@media(max-width: 750px)
+{
+    .mainContainer{
+        flex-direction: column;
+    }
+
+    .container, .containerOfSubtaskcontainer{
+        width: 100%;
+    }
+
+    .containerOfSubtaskcontainer{
+        margin-top: 1rem;
+    }
+
+    #header .h1Div{
+        text-align: center;
+    }
+
+    .Tasks div button{
+        width: min(100%, 200px)
+    }
+}

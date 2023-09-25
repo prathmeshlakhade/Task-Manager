@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.headerNavContainer{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+#header{
+    display: flex;
+    background-color: coral;
+    padding: 1rem 0;
+}
+
+#header .h1Div h1{
+    display: inline;
+}
+#header .h1Div{
+    width: 50%;
+    /* margin: auto; */
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+.nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+    color: bisque;
+}
+#header div a{
+    justify-self: flex-end;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.addTasksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    width: 40%;
+    height: 35rem;
+    overflow: auto;
+}
+
+.addTasksContainer div div input, select{
+    height: 2rem;
+    width: 100%;
+}
+
+.border{
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: scroll;
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainContainer .underMain{
+    border: 1px solid black;
+    text-align: center;
+    height: 100%;
+    width: 20rem;
+}
+
+.divunderUndermain{
+    border-radius: 0.5rem;
+    width: 600px;
+    height: 100vh;
+    margin: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Tasks{
+    
+    width: 90%;
+    height: auto;
+    padding: 0.5rem;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.2), -1px -1px 50px rgba(0, 0, 0, 0.2);
+}
+
+.Tasks .flex1{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.flex1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box3{
+    overflow: hidden;
+}
+.editDeleteButtons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.navbar{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    flex-wrap: wrap;
+    /* margin-bottom: 1rem; */
+}
+
+.navbar div{
+    overflow: hidden;
+}
+
+.navbar div h2{
+    padding: 1rem 0;
+    color: #fff;
+    border-bottom: 5px solid #333;
+}
+
+.navbar div h2:hover{
+    cursor: pointer;
+    border-bottom: 5px solid coral;
+    color: coral;
+}
+
+.flex1 div p, .Tasks div button{
+    font-size: 1.5rem;
+}
+
+.Tasks div button{
+    padding: 5px;
+}
+
+
+.editDeleteButtons .btn{
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    margin-top: 0.5rem;
+
+}
+
+.editDeleteButtons .btn1{
+    background-color: green;
+}
+
+.editDeleteButtons .btn2{
+    background-color: red;
+}
+
+
+
+.editDeleteButtons .btn3{
+    background-color: rgb(0, 179, 255);
+}
+
+@media(max-width: 700px)
+{
+
+}

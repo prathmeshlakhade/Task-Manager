@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T manager</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  
+  <body>
+    <header id="header">
+      <div class="h1Div">
+        <h1>Task Manager</h1>
+      </div>
+
+      <div class="nav">
+        <nav>
+          <ul>
+            <li>
+              <a  id="add1" onclick="check('task')">Add task</a>
+            </li>
+            <!-- <li>
+              <a onclick="check('subtask')" id="add2">Add Subtask</a>
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="navbar">
+      <div class="div1" >
+        <h2 id="inprogressh2ID" onclick="h2Clicked(this.id)">In Progress</h2>
+      </div>
+
+      <div class="div2" >
+        <h2 id="completedh2ID" onclick="h2Clicked(this.id)">Completed</h2>
+      </div>
+
+      <div class="div3" >
+        <h2 id="duepassedh2ID" onclick="h2Clicked(this.id)">Due Passed</h2>
+      </div>
+
+      <div class="div4" >
+        <h2 id="cancelledh2ID" onclick="h2Clicked(this.id)">Cancelled</h2>
+      </div>
+    </div>
+
+    <div class="mainContainer">
+
+      <div class="divUnderInProgress divunderUndermain" id="forDom">
+
+        <!-- from this -->
+        <!-- <div class="tasksInprogress Tasks">
+
+          <div class="flex1"> 
+
+            <div class="box1"> 
+              <p>ID</p>
+              <p>Name</p>
+              <p>Start Date</p>
+              <p>End Date</p>
+              <p>Status</p>
+            </div>
+
+            <div class="box2">
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+            </div>
+
+            <div class="box3">
+              <p>101</p>
+              <p>go to School</p>
+              <p>12-02-2022</p>
+              <p>12-02-2023</p>
+              <p>In Progress</p>
+            </div>
+
+          </div>
+
+          <div class="editDeleteButtons">
+            <button class="btn1 btn">EDIT</button>
+            <button class="btn2 btn">DELETE</button>
+            <button class="btn3 btn">SUBTASKS</button>
+          </div>
+
+        </div>  -->
+
+        <!-- till this -->
+
+      </div>
+
+      <!-- </div> -->
+
+      <!-- <div class="completedContainer underMain">
+
+            <h1>Completed</h1>
+
+            <div class="divUnderCompleted divunderUndermain">
+                
+            </div>
+
+        </div> -->
+
+      <!-- <div class="duePassedContainer underMain">
+
+            <h1>Due Passed</h1>
+
+            <div class="divUnderDuePassed divunderUndermain">
+                
+            </div>
+        </div> -->
+
+      <!-- <div class="cancelledContainer underMain">
+
+            <h1>Cancelled</h1>
+
+            <div class="divUnderCancelled divunderUndermain">
+                
+            </div>
+        </div> -->
+    </div>
+
+    <script src="js/DomLoad.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>
