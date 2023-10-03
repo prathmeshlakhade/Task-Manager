@@ -273,9 +273,11 @@ class EditTask{
         let realarr = JSON.parse(localStorage.getItem(taskEditBtnClicked[2]));
         let temp = [];
         let tempindex = 0;
+        let tsk = new TaskAddClass();
         if( (obj.status == "in progress") && (taskEditBtnClicked[2] != "arrayofInProgressTasks") )
         {
-        
+            
+            tsk.setTaskArrIfNotPresent("arrayofInProgressTasks");
             let retobj = this.delitemfromArr(realarr, taskEditBtnClicked[2], obj);
 
             if(retobj)
@@ -288,7 +290,7 @@ class EditTask{
         }
         else if( (obj.status == "completed") && (taskEditBtnClicked[2] != "arrayofCompletedTasks") )
         {
-            
+            tsk.setTaskArrIfNotPresent("arrayofCompletedTasks");
             let retobj = this.delitemfromArr(realarr, taskEditBtnClicked[2], obj);
 
             if(retobj)
@@ -299,6 +301,7 @@ class EditTask{
         }
         else if( (obj.status == "due passed") && (taskEditBtnClicked[2] != "arrayofDuePassedTasks") )
         {
+            tsk.setTaskArrIfNotPresent("arrayofDuePassedTasks");
             
             let retobj = this.delitemfromArr(realarr, taskEditBtnClicked[2], obj);
             if(retobj)
@@ -309,6 +312,7 @@ class EditTask{
         }
         else if( (obj.status == "cancelled") && (taskEditBtnClicked[2] != "arrayofCancelledTasks") )
         {
+            tsk.setTaskArrIfNotPresent("arrayofCancelledTasks");
             
             let retobj = this.delitemfromArr(realarr, taskEditBtnClicked[2], obj);
 
