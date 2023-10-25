@@ -13,7 +13,7 @@ function check(c)
 
     localStorage.setItem("taskorSubtask", JSON.stringify(c));
 
-    window.open("../addTaskSubtask.html", "_self");
+    window.open("./addTaskSubtask.html", "_self");
 }
 
 //---------------------------------------------------------------------------------------------------------------------------
