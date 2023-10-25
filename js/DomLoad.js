@@ -9,7 +9,7 @@ function check(c)
 
     localStorage.setItem("taskorSubtask", JSON.stringify(c));
 
-    window.open("../HTML files/addTaskSubtask.html", "_self");
+    window.open("../addTaskSubtask.html", "_self");
 }
 
 //------------------------------------------------------------------------------------------------------------
@@ -180,7 +180,7 @@ class setColorAndShow
 
             localStorage.setItem("subtaskClickedId", JSON.stringify(this.id));
             localStorage.setItem("ArrayNameForSubtask", JSON.stringify(keyName));
-            window.open("../HTML files/showSubTask.html", "_self")
+            window.open("../showSubTask.html", "_self")
         });
 
         btncontainer.appendChild(btn1);
